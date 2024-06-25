@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин украшений</title>
+    <link rel="shortcut icon" href="./images/icon.ico">
+    <link rel="stylesheet" href="./bootstrap-5.2.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+<body> 
+  <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 header">
+    <div class=" bi me-2">
+      <a href="./index.html"><img width = "300" height = "auto" src="images/logo2.png" alt="лого_сайта"></a>
+    </div>
+    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 min-px">
+      <li><a class="nav-link px-2 active" href="./index.html">Главная</a></li>
+      <li><a class="nav-link px-2 non" href="./catalogpearl.html">Каталог</a></li>
+      <li><a class="nav-link px-2 non" href="./customers.html">Покупателям</a></li>
+      <li><a class="nav-link px-2 non" href="./contacts.html">Контакты</a></li>
+    </ul>
+    <div class="col-md-3 text-end">
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn"  for="menu__toggle">
+          <span></span>
+        </label>
+        <ul class="menu__box">
+          <div class="items_texts_up">
+            <li><img width = "200" height = "auto" src="images/logo2.png" alt="лого_сайта"></li>
+            <li><a class="menu__item__text_h3">Магазин украшений</a></li>
+          </div>
+          <li><a class="menu__item" href="./index.html">Главная страница</a></li>
+          <li><a class="menu__item" href="./catalogpearl.html">Каталог</a></li>
+          <li><a class="menu__item" href="./customers.html">Покупателям</a></li>
+          <li><a class="menu__item" href="./contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <div>
+    <div>
+      <img class="main_body_image" src="images/banner.png">
+    </div>
+    <div class="new_nazvanie" id="new_nazvanie">
+      <h2 >НОВИНКИ</h2>
+    </div>
+    <div class="container_catalog row">
+      <div class="card_container flex-row justify-content-between" >
+        <div class="container1  new-1">
+          <img src="./images/beads/9.png" alt="Фото">
+            <div class="price"><i>New</i></div>
+            <div class="text-overlay1 new">
+              <a class="button-buy btn-buy" href="./сatalogbeads.html#9" >Подробнее</a>
+            </div>
+          </div>
+          <div class="container1 new-1">
+            <img src="./images/pearl/7.png" alt="Фото">
+            <div class="price"><i>New</i></div>
+            <div class="text-overlay1 new">
+              <a class="button-buy btn-buy" href="./catalogpearl.html#7">Подробнее</a>
+            </div>
+          </div>
+          <div class="container1  new-1">
+            <img src="./images/pearl/8.png" alt="Фото">
+            <div class="price"><i>New</i></div>
+            <div class="text-overlay1 new">
+              <a class="button-buy btn-buy" href="./catalogpearl.html#8">Подробнее</a>
+            </div>
+          </div>
+          <div class="container1  new-1">
+            <img src="./images/beads/15.png" alt="Фото">
+            <div class="price"><i>New</i></div>
+            <div class="text-overlay1 new">
+              <a class="button-buy btn-buy" href="./сatalogbeads.html#15">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="customers-text main_text">
+      <h1>Добро пожаловать на страницу покупателя!</h1>
+      <div class="index-left">
+        <p> Мы предлагаем украшения, выполненные в лимитированном количестве и по уникальному дизайну.</p>
+        <p>Каждое украшение собрано вручную из качественных материалов.</p> 
+        <p><u>Наши преимущества:</u></p>
+        <ul class="custom-list center-ul">
+          <li>высокое качество товаров и услуг;</li>
+          <li>удобные способы оплаты и доставки;</li>
+          <li>индивидуальный подход к клиенту.</li>
+        </ul>
+        <p>Вы можете ознакомиться с каталогом товаров и выбрать то, что нравится именно Вам. Также Вы можете заказать украшения по своей задумке.  Для оформления заказа или по любым другим вопросам свяжитесь с администратором.</p>
+        <p>Мы заботимся о наших клиентах и делаем всё возможное, чтобы покупка была приятной и комфортной.</p>
+      </div>
+      <a href="./catalogpearl.html">
+        <button class="btn_page" >Каталог</button>
+      </a>
+    </div>
+  </div>
+  <footer> 
+    <div class="footer">
+      <div class="row">
+        <ul>
+          <li><a href="./catalogpearl.html">Каталог</a></li>
+          <li><a href="./contacts.html">Связаться с нами</a></li>
+          <li><a href="./customers.html">Покупателям</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+<script src="./js/red_text.js"></script>
+<script src="./bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>         
+</body>
+</html>

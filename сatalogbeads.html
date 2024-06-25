@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин украшений</title>
+    <link rel="shortcut icon" href="./images/icon.ico">
+    <link rel="stylesheet" href="./bootstrap-5.2.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+<body> 
+  <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 header">
+    <div class=" bi me-2">
+      <a href="./index.html"><img width = "300" height = "auto" src="images/logo2.png" alt="лого_сайта"></a>
+    </div>
+    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 min-px">
+      <li><a class="nav-link px-2 non" href="./index.html">Главная</a></li>
+      <li><a class="nav-link px-2 active" href="./catalogpearl.html">Каталог</a></li>
+      <li><a class="nav-link px-2 non" href="./customers.html">Покупателям</a></li>
+      <li><a class="nav-link px-2 non" href="./contacts.html">Контакты</a></li>
+    </ul>
+    <div class="col-md-3 text-end">
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn"  for="menu__toggle">
+          <span></span>
+        </label>
+        <ul class="menu__box">
+          <div class="items_texts_up">
+            <li><img width = "200" height = "auto" src="images/logo2.png" alt="лого_сайта"></li>
+            <li><a class="menu__item__text_h3">Магазин украшений</a></li>
+          </div>
+          <li><a class="menu__item" href="./index.html">Главная страница</a></li>
+          <li><a class="menu__item" href="./catalogpearl.html">Каталог</a></li>
+          <li><a class="menu__item" href="./customers.html">Покупателям</a></li>
+          <li><a class="menu__item" href="./contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <div class="modal fade" id="openModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Рекомендации по уходу</h3>
+          <button title="Close" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="recom"> 
+            <p>– Протирать мягкой салфеткой после каждой носки. Салфетка идет в комплекте с заказом.</p>
+            <p>– Снимать перед душем, бассейном, сауной, сном.</p>  
+            <p>– Не допускать контакта с косметикой и любыми хим. средствами.</p> 
+            <p>– Хранить в сухом месте, отдельно от других украшений, чтобы не царапалось покрытие.</p>
+          </div> 
+        </div>    
+        <div class="modal-footer">
+          <div class="modal-footer-op">
+            <h3 class="modal-title">Выбрали интересующий вас товар?</h3>
+            <h4 class="modal-desc">Напишите нашим продавцам через любой удобный вам мессенджер!</h4>
+          </div>
+          <div class="contacts_modal" style="margin-top: 10px;">
+            <a href="https://vk.com/psych0goth" target="_blank"><img src="./images/icon_vk.png" alt=""></a>
+            <a href="https://t.me/psychogothstore" target="_blank"><img src="./images/icon_telegram.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="catalog">
+    <div>
+      <h2 class = "zagolovok2">Каталог</h2>
+    </div>
+    <div class="knopka">
+      <button id="pearl-button" class="catalog-button" onclick="window.location = 'catalogpearl.html'">
+          Украшения из жемчуга
+      </button>
+      <button id="bead-button" class="catalog-button"  onclick="window.location = 'сatalogbeads.html'">
+          Украшения из бисера
+      </button>
+    </div>
+  </div>
+  <div class="container_catalog">
+    <div class="card_container d-flex flex-row justify-content-between" >
+      <div class="container1">
+        <img src="./images/beads/2.png" alt="Фото">
+        <div class="price">1050 руб </div>
+        <div class="text-overlay1">
+          <h1>Ожерелье из бисера</h1>
+          <p>Ожерелье из цветного бисера и фигурных бусин <a class="button-buy" href="#openModal" data-bs-toggle="modal" data-bs-target="#openModal">Купить</a></p>
+        </div>
+      </div>
+      <div class="container1">
+        <img src="./images/beads/3.png" alt="Фото">
+        <div class="price">860 руб</div>
+        <div class="text-overlay1">
+          <h1>Ожерелье сердечко</h1>
+          <p>Ожерелье из цветного бисера и фигурных бусин <a class="button-buy" href="#openModal" data-bs-toggle="modal" data-bs-target="#openModal">Купить</a></p>
+        </div>
+      </div>
+      <div class="container1">
+        <img src="./images/beads/1.png" alt="Фото">
+        <div class="price">840 руб</div>
+        <div class="text-overlay1">
+          <h1>Ожерелье из бисера</h1>
+          <p>Ожерелье из цветного бисера и фигурных бусин <a class="button-buy" href="#openModal" data-bs-toggle="modal" data-bs-target="#openModal">Купить</a></p>
+        </div>
+      </div>
+      <div class="container1">
+        <img src="./images/beads/5.png" alt="Фото">
+        <div class="price">1500 руб</div>
+        <div class="text-overlay1">
+          <h1>Бисер и бусины</h1>
+          <p>Ожерелье из цветного бисера и фигурных бусин <a class="button-buy" href="#openModal" data-bs-toggle="modal" data-bs-target="#openModal">Купить</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="card_container d-flex flex-row justify-content-between" >
+      <div class="container1">
+        <img src="./images/beads/6.png" alt="Фото">
+        <div class="price">2400 руб</div>
+        <div class="text-overlay1">
+          <h1>Морское ожерелье</h1>
+          <p>Ожерелье из двух нитей, сделанное в морском стиле  <a class="button-buy" href="#openModal" data-bs-toggle="modal" data-bs-target="#openModal">Купить</a></p>
+        </div>
+      </div>
+      <div class="container1" id="9">
+        <img src="./images/beads/9.png" alt="Фото">
+        <div class="price">3600 руб</div>
+        <div class="text-overlay1">
+          <h1>Серьги ХАОС</h1>
+          <p>Серьги с подвеской из бусин и ракушек в стиле "ХАОС" <a class="button-buy" href="#openModal" data-bs-toggle="modal" data-bs-target="#openModal">Купить</a></p>
+        </div>
+      </div>
+      <div class="container1">
+        <img src="./images/beads/7.png" alt="Фото">
+        <div class="price">450 руб</div>
+        <div class="text-overlay1">
+          <h1>Ожерелье ХАОС</h1>
+          <p>Ожерелье, сделанное в технике хаос из разных бусн <a class="button-buy" href="#openModal" data-bs-toggle="modal" data-bs-target="#openModal">Купить</a></p>
+        </div>
+      </div>
+      <div class="container1">
+        <img src="./images/beads/10.png" alt="Фото">
+        <div class="price">2300 руб</div>
+        <div class="text-overlay1">
+          <h1>Серьги нити</h1>
+          <p>Простые сергьи из бусин <a class="button-buy" href="#openModal" data-bs-toggle="modal" data-bs-target="#openModal">Купить</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="card_container d-flex flex-row justify-content-between three" >
+      <div class="container1 ">
+        <img src="./images/beads/13.png" alt="Фото">
+        <div class="price"> <p class="price_text">2300 руб</p> </div>
+        <div class="text-overlay1">
+          <h1>Заколки для волос</h1>
+          <p>Заколки из бисера и бусин <a class="button-buy" href="#openModal" data-bs-toggle="modal" data-bs-target="#openModal">Купить</a></p>    
+        </div>
+      </div>
+      <div class="container1" id="15">
+        <img src="./images/beads/15.png" alt="Фото">
+        <div class="price">4500 руб</div>
+        <div class="text-overlay1">
+          <h1>Косынка из бисера</h1>
+          <p>Ажурная косынка из бисера <a class="button-buy" href="#openModal" data-bs-toggle="modal" data-bs-target="#openModal">Купить</a></p>
+        </div>
+      </div>
+      <div class="container1">
+        <img src="./images/beads/14.png" alt="Фото">
+        <div class="price">2300 руб</div>
+        <div class="text-overlay1">
+          <h1>Заколки для волос</h1>
+          <p>Заколки из бисера и бусин <a class="button-buy" href="#openModal" data-bs-toggle="modal" data-bs-target="#openModal">Купить</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="card_container d-flex flex-row justify-content-between two" >
+      <div class="container1">
+        <img src="./images/beads/11.png" alt="Фото">
+        <div class="price">1459 руб </div>
+        <div class="text-overlay1">
+          <h1>Серьги-бантики</h1>
+          <p>Серьги из зеленого бисера в виде бантиков <a class="button-buy" href="#openModal" data-bs-toggle="modal" data-bs-target="#openModal">Купить</a></p> 
+        </div>  
+      </div>
+      <div class="container1">
+        <img src="./images/beads/12.png" alt="Фото">
+        <div class="price">3000 руб</div>
+        <div class="text-overlay1">
+          <h1>Заколки-бантики</h1>
+          <p>Заколки из бисера и бусин в виде бантиков <a class="button-buy" href="#openModal" data-bs-toggle="modal" data-bs-target="#openModal">Купить</a></p>
+        </div>
+      </div>
+    </div>
+  </div>        
+  <footer> 
+    <div class="footer">
+      <div class="row">
+        <ul>
+          <li><a href="./catalogpearl.html">Каталог</a></li>
+          <li><a href="./contacts.html">Связаться с нами</a></li>
+          <li><a href="./customers.html">Покупателям</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+       
+<script src="./bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
